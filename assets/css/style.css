@@ -70,7 +70,7 @@ p {
   height: 800px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("../images/giacp-property.jpg");
+  background-image: url("../images/giacp-property2.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -94,58 +94,79 @@ p {
 .william-rowe {
   margin-bottom: 20px;
   padding: 50px;
-  height: 300px;
+  height: auto;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #0072bb;
   color: #ffffff;
+  position: relative;
 }
 
 .william-rowe h2 {
+  position: relative;
   margin-bottom: 20px;
   font-size: 36px;
 }
 
 .william-rowe img {
+  position: relative;
   max-height: 200px;
+  top: -25px;
+  left: -25px;
+  margin-right: 0;
+  margin-bottom: -25px;
 }
 
 .robert-werkman {
   margin-bottom: 20px;
   padding: 50px;
-  height: 300px;
+  height: auto;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #0072bb;
   color: #ffffff;
+  position: relative;
 }
 
 .robert-werkman h2 {
   margin-bottom: 20px;
   font-size: 36px;
+  position: relative;
 }
 
 .robert-werkman img {
+  position: relative;
   max-height: 200px;
+  top: -25px;
+  left: -25px;
+  margin-right: 0;
+  margin-bottom: -25px;
 }
 
 .carrie-leese {
   margin-bottom: 20px;
   padding: 50px;
-  height: 300px;
+  height: auto;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #0072bb;
   color: #ffffff;
+  position: relative;
 }
 
 .carrie-leese h2 {
   margin-bottom: 20px;
   font-size: 36px;
+  position: relative;
 }
 
 .carrie-leese img {
+  position: relative;
   max-height: 200px;
+  top: -25px;
+  left: -25px;
+  margin-right: 0;
+  margin-bottom: -25px;
 }
 
-.benefits {
+.info {
   margin-right: 20px;
   padding: 20px;
   clear: both;
@@ -156,49 +177,52 @@ p {
   background-color: #2589bd;
 }
 
-.benefit-lead {
+.hours {
   margin-bottom: 32px;
+  margin-left: 25px;
   color: #ffffff;
 }
 
-.benefit-lead h3 {
+.hours h3 {
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
 }
 
-.benefit-lead img {
+.hours img {
   display: block;
   margin: 10px auto;
   max-width: 150px;
 }
 
-.benefit-brand {
+.location {
   margin-bottom: 32px;
+  margin-left: 25px;
   color: #ffffff;
 }
 
-.benefit-brand h3 {
+.location h3 {
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
 }
 
-.benefit-brand img {
+.location img {
   display: block;
   margin: 10px auto;
   max-width: 150px;
 }
 
-.benefit-cost {
+.procedures {
   margin-bottom: 32px;
+  margin-left: 25px;
   color: #ffffff;
 }
 
-.benefit-cost h3 {
+.procedures h3 {
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
 }
 
-.benefit-cost img {
+.procedures img {
   display: block;
   margin: 10px auto;
   max-width: 150px;
