@@ -2,6 +2,13 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>GIACP</title>
   </head>
@@ -9,32 +16,38 @@
   <body>
     <!-- this is a header -->
     <header>
-      <!-- fancy marking for GIACP -->
-      <h1>
-        <mark>Gastroenterology Associates</mark>
-      </h1>
-      <h2>
-        of Central Pennsylvania, P.A.
-      </h2>
-      <!-- changed div to semantic tag nav -->
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about-us.html">About Us</a>
-          </li>
-          <li>
-            <a href="associates.html">Associates</a>
-          </li>
-          <li>
-            <a href="contact-us.html">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
+      <!-- fancy Jumbotron for GIACP -->
+
+      <div class="jumbotron">
+        <h1 class="display-4">Gastroenterology Associates</h1>
+
+        <p class="lead">
+          Of Central Pennsylvania, P.C.
+        </p>
+      </div>
+      <!-- dropdown navigation button -->
+      <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-danger dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Navigation
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="about-us.html">About Us</a>
+          <a class="dropdown-item" href="associates.html">Associates</a>
+          <a class="dropdown-item" href="contact-us.html">Contact Us</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
     </header>
     <div class="hero"></div>
+
     <main class="content">
       <!-- setting up william rowe info -->
       <section class="william-rowe">
@@ -154,5 +167,20 @@
         &copy; 2020 Awesome Coding LLC Inc.
       </p>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

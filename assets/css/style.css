@@ -19,6 +19,16 @@ header {
   color: #ffffff;
 }
 
+.container {
+  margin: 0 0;
+  display: flex;
+}
+.jumbotron {
+  background-color: #2a607c;
+  padding: 0;
+  margin: 0 0;
+}
+
 /* removed . as this is now a semantic tag in index */
 header h1 {
   display: inline-block;
