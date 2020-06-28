@@ -93,6 +93,16 @@ p {
   margin-right: 25px;
 }
 
+#fs-frm {
+  background-color: #0072bb;
+  padding: 15px;
+}
+
+#message,
+#full-name,
+#email-address {
+  width: 80%;
+}
 .float-right {
   float: right;
   margin-left: 25px;
