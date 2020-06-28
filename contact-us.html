@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="form.css" />
+    <title>GIACP</title>
+  </head>
+
+  <body>
+    <!-- this is a header -->
+    <header>
+      <!-- fancy Jumbotron for GIACP -->
+
+      <div class="jumbotron">
+        <h1 class="display-4">Gastroenterology Associates</h1>
+
+        <p class="lead">
+          Of Central Pennsylvania, P.C.
+        </p>
+      </div>
+      <!-- dropdown navigation button -->
+      <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-danger dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Navigation
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="index.html">Home</a>
+          <a class="dropdown-item" href="about-us.html">About Us</a>
+          <a class="dropdown-item" href="associates.html">Associates</a>
+          <a class="dropdown-item" href="contact-us.html">Contact Us</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+    </header>
+    <div class="hero"></div>
+
+    <!-- contact us form -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-9 col-md-offset-3" id="form_container">
+          <h2>Contact Us</h2>
+          <p>
+            Please send your message below. We will get back to you at the
+            earliest!
+          </p>
+          <form role="form" method="post" id="reused_form">
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <label for="message"> Message:</label>
+                <textarea
+                  class="form-control"
+                  type="textarea"
+                  name="message"
+                  id="message"
+                  maxlength="6000"
+                  rows="7"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <label for="name"> Your Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="col-sm-6 form-group">
+                <label for="email"> Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <button type="submit" class="btn btn-lg btn-default pull-right">
+                  Send →
+                </button>
+              </div>
+            </div>
+          </form>
+          <div
+            id="success_message"
+            style="width: 100%; height: 100%; display: none;"
+          >
+            <h3>Posted your message successfully!</h3>
+          </div>
+          <div
+            id="error_message"
+            style="width: 100%; height: 100%; display: none;"
+          >
+            <h3>Error</h3>
+            Sorry there was an error sending your form.
+          </div>
+        </div>
+        <div class="col-3">
+          <!-- hours of operation -->
+          <section class="hours">
+            <h3>Hours</h3>
+            <img
+              src="./assets/images/lead-generation.png"
+              alt="lead-generation"
+            />
+            <ul>
+              <li>
+                Monday: 8AM-4:30PM
+              </li>
+              <li>
+                Tuesday: 8AM-4:30PM
+              </li>
+              <li>
+                Wednesday: 8AM-4:30PM
+              </li>
+              <li>
+                Thursday: 8AM-4:30PM
+              </li>
+              <li>
+                Friday: 8AM-4:30PM
+              </li>
+              <li>
+                Saturday: Closed
+              </li>
+              <li>
+                Sunday: Closed
+              </li>
+            </ul>
+          </section>
+          <!-- location of GIACP -->
+          <section class="location">
+            <h3>Location</h3>
+            <img src="./assets/images/brand-awareness.png" alt="location" />
+            <p>
+              1421 Fishburn Road, Hershey, PA 17033
+            </p>
+          </section>
+          <!-- changed div into section semantic tag -->
+          <section class="procedures">
+            <h3>Procedures</h3>
+            <img src="./assets/images/cost-management.png" alt="what-we-do" />
+            <ul>
+              <li>
+                Screening Colonoscopy
+              </li>
+              <li>
+                Upper Endoscopy (EGD or Esophagogastroduodenoscopy)
+              </li>
+              <li>
+                Colonoscopy
+              </li>
+              <li>
+                Flexible Sigmoidoscopy
+              </li>
+              <li>
+                ERCP (Endoscopic Retrograde CholangioPancreaticogram)
+              </li>
+              <li>
+                Liver Biopsy
+              </li>
+              <li>
+                Esophageal Manometry
+              </li>
+              <li>
+                24 Hour pH Probe
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- info about GIACP -->
+    <footer>
+      <h2>Made by Awesome Coding LLC</h2>
+      <p>
+        &copy; 2020 Awesome Coding LLC Inc.
+      </p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

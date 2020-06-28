@@ -85,6 +85,9 @@ p {
   background-position: center;
 }
 
+.col-3 {
+  background-color: #0072bb;
+}
 .float-left {
   float: left;
   margin-right: 25px;
@@ -169,7 +172,8 @@ p {
 
 .carrie-leese img {
   position: relative;
-  max-height: 200px;
+  max-height: 170px;
+  max-width: 140px;
   top: -25px;
   left: -25px;
   margin-right: 0;
