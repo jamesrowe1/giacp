@@ -49,57 +49,74 @@
     </header>
     <div class="hero"></div>
 
-    <form
-      id="fs-frm"
-      name="simple-contact-form"
-      accept-charset="utf-8"
-      action="https://formspree.io/rowejamesa@gmail.com"
-      method="post"
-    >
-      <fieldset id="fs-frm-inputs">
-        <label for="full-name">Full Name</label>
-        <input
-          type="text"
-          name="name"
-          id="full-name"
-          placeholder="First and Last"
-          required=""
-        />
-        <label for="email-address">Email Address</label>
-        <input
-          type="email"
-          name="_replyto"
-          id="email-address"
-          placeholder="email@domain.tld"
-          required=""
-        />
-        <label for="message">Message</label>
-        <textarea
-          rows="5"
-          name="message"
-          id="message"
-          placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
-          required=""
-        ></textarea>
-        <input
-          type="hidden"
-          name="_subject"
-          id="email-subject"
-          value="Contact Form Submission"
-        />
-      </fieldset>
-      <input type="submit" value="Submit" />
-    </form>
-    <form action="http://formspree.io/rowejamesa@gmail.com">
-      <input type="email" name="_replyto" /><textarea name="body"></textarea
-      ><input type="submit" value="Send" />
-    </form>
-
     <!-- contact us form -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-9 col-md-offset-3" id="form_container">
-          <h2>Contact Us</h2>
+          <!-- email for now, not hipaa compliant -->
+          
+          <form
+            id="fs-frm"
+            name="simple-contact-form"
+            accept-charset="utf-8"
+            action="https://formspree.io/rowejamesa@gmail.com"
+            method="post"
+          >
+          <div class="row">
+              <div class="col-3">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Full Name</label>
+            </div>
+            <div class="col-9">
+              <input
+                type="text"
+                name="name"
+                id="full-name"
+                placeholder="First and Last"
+                required=""
+              />
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+              <label for="email-address">Email Address</label>
+            </div>
+            <div class="col-9">
+              <input
+                type="email"
+                name="_replyto"
+                id="email-address"
+                placeholder="email@domain.tld"
+                required=""
+              />
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-3">
+              <label for="message">Message</label>
+            </div>
+            <div class="col-9">
+              <textarea
+                rows="5"
+                name="message"
+                id="message"
+                placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
+                required=""
+              ></textarea>
+            </div>
+            </div>
+              <input
+                type="hidden"
+                name="_subject"
+                id="email-subject"
+                value="Contact Form Submission"
+              />
+            </fieldset>
+            <input type="submit" value="Submit" />
+          </form>
+
+          <!-- keeping cause this is better on hosted web. github wont allow -->
+          <!-- <h2>Contact Us</h2>
           <p>
             Please send your message below. We will get back to you at the
             earliest!
@@ -161,9 +178,9 @@
           >
             <h3>Error</h3>
             Sorry there was an error sending your form.
-          </div>
+          </div> -->
         </div>
-        <div class="col-3">
+        <div class="col-3" id="sidebar">
           <!-- hours of operation -->
           <section class="hours">
             <h3>Hours</h3>
