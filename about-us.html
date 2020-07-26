@@ -10,142 +10,10 @@
     />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>GIACP</title>
+    <title>About Us</title>
   </head>
 
-  <body>
-    <!-- this is a header -->
-    <header>
-      <!-- fancy Jumbotron for GIACP -->
-
-      <div class="jumbotron">
-        <h1 class="display-4">Gastroenterology Associates</h1>
-
-        <p class="lead">
-          Of Central Pennsylvania, P.C.
-        </p>
-      </div>
-      <!-- dropdown navigation button -->
-      <div class="btn-group">
-        <button
-          type="button"
-          class="btn btn-danger dropdown-toggle"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Navigation
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="index.html">Home</a>
-          <a class="dropdown-item" href="about-us.html">About Us</a>
-          <a class="dropdown-item" href="associates.html">Associates</a>
-          <a class="dropdown-item" href="contact-us.html">Contact Us</a>
-        </div>
-      </div>
-    </header>
-    <div class="hero"></div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-9">
-          <h2>Coming Soon!</h2>
-
-          <div class="progress">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style="width: 25%;"
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
-          <div class="spinner-border text-primary m-1" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-        </div>
-        <div class="col-3" id="sidebar">
-          <!-- hours of operation -->
-          <section class="hours">
-            <h3>Hours</h3>
-            <img
-              src="./assets/images/lead-generation.png"
-              alt="lead-generation"
-            />
-            <ul>
-              <li>
-                Monday: 8AM-4:30PM
-              </li>
-              <li>
-                Tuesday: 8AM-4:30PM
-              </li>
-              <li>
-                Wednesday: 8AM-4:30PM
-              </li>
-              <li>
-                Thursday: 8AM-4:30PM
-              </li>
-              <li>
-                Friday: 8AM-4:30PM
-              </li>
-              <li>
-                Saturday: Closed
-              </li>
-              <li>
-                Sunday: Closed
-              </li>
-            </ul>
-          </section>
-          <!-- location of GIACP -->
-          <section class="location">
-            <h3>Location</h3>
-            <img src="./assets/images/brand-awareness.png" alt="location" />
-            <p>
-              1421 Fishburn Road, Hershey, PA 17033
-            </p>
-          </section>
-          <!-- changed div into section semantic tag -->
-          <section class="procedures">
-            <h3>Procedures</h3>
-            <img src="./assets/images/cost-management.png" alt="what-we-do" />
-            <ul>
-              <li>
-                Screening Colonoscopy
-              </li>
-              <li>
-                Upper Endoscopy (EGD or Esophagogastroduodenoscopy)
-              </li>
-              <li>
-                Colonoscopy
-              </li>
-              <li>
-                Flexible Sigmoidoscopy
-              </li>
-              <li>
-                ERCP (Endoscopic Retrograde CholangioPancreaticogram)
-              </li>
-              <li>
-                Liver Biopsy
-              </li>
-              <li>
-                Esophageal Manometry
-              </li>
-              <li>
-                24 Hour pH Probe
-              </li>
-            </ul>
-          </section>
-        </div>
-      </div>
-    </div>
-    <!-- info about GIACP -->
-    <footer>
-      <h2>Made by Awesome Coding LLC</h2>
-      <p>
-        &copy; 2020 Awesome Coding LLC Inc.
-      </p>
-    </footer>
+  <body onload="init()">
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -161,5 +29,14 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="htmlgenerators/generateHTMLAboutUs.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="htmlgenerators/generateHTML.js"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

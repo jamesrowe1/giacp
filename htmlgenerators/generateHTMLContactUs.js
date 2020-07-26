@@ -1,0 +1,63 @@
+function generateHTMLContactUs() {
+  return `<!-- email for now, not hipaa compliant -->
+          
+    <form
+      id="fs-frm"
+      name="simple-contact-form"
+      accept-charset="utf-8"
+      action="https://formspree.io/rowejamesa@gmail.com"
+      method="post"
+    >
+    <div class="row">
+        <div class="col-3">
+      <fieldset id="fs-frm-inputs">
+        <label for="full-name">Full Name</label>
+      </div>
+      <div class="col-9">
+        <input
+          type="text"
+          name="name"
+          id="full-name"
+          placeholder="First and Last"
+          required=""
+        />
+      </div>
+      </div>
+      <div class="row">
+          <div class="col-3">
+        <label for="email-address">Email Address</label>
+      </div>
+      <div class="col-9">
+        <input
+          type="email"
+          name="_replyto"
+          id="email-address"
+          placeholder="Please enter your email here"
+          required=""
+        />
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-3">
+        <label for="message">Message</label>
+      </div>
+      <div class="col-9">
+        <textarea
+          rows="5"
+          name="message"
+          id="message"
+          placeholder="Please type your message here"
+          required=""
+        ></textarea>
+      </div>
+      </div>
+        <input
+          type="hidden"
+          name="_subject"
+          id="email-subject"
+          value="Contact Form Submission"
+        />
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>`;
+}
