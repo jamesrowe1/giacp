@@ -1,3 +1,4 @@
+//index page html
 function generateHTMLIndex() {
   return `<!-- setting up william rowe info -->
     <section class="william-rowe">
