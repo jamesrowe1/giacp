@@ -1,3 +1,4 @@
+//upper endoscopy html
 function generateHTMLUpperEndoscopy() {
   return `<h2 class="uppertitle">What is an Upper Endoscopy?</h2>
     <section class="uppervideo">
