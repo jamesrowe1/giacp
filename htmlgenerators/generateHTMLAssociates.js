@@ -1,3 +1,4 @@
+//associates html
 function generateHTMLAssociates() {
   return `<!-- setting up william rowe info -->
     <section class="william-rowe">
