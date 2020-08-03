@@ -1,3 +1,4 @@
+//colonoscopy html
 function generateHTMLColonoscopy() {
   return `<h2 class="uppertitle">What is a Colonoscopy?</h2>
   <section class="uppervideo">
