@@ -1,5 +1,5 @@
+//html for all pages
 function generateHTML(data) {
-  //comments work?
   return `<!-- this is a header -->
         <header>
           <!-- fancy Jumbotron for GIACP -->
