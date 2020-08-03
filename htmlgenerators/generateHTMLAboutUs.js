@@ -1,3 +1,4 @@
+//specific to about us page
 function generateHTMLAboutUs() {
   return `<h2>Coming Soon!</h2>
 
