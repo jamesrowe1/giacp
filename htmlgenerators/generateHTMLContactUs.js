@@ -1,3 +1,5 @@
+//contact us html
+//add in that link on original site
 function generateHTMLContactUs() {
   return `<!-- email for now, not hipaa compliant -->
           
