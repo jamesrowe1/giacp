@@ -10,6 +10,14 @@ body {
   background-color: #d9dcd6;
 }
 
+img {
+  float: left;
+  width:  100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 10px;
+}
+
 /* removed . as this is now a semantic tag in index */
 header {
   padding: 20px;
@@ -19,60 +27,10 @@ header {
   color: #ffffff;
 }
 
-.container {
-  margin: 0 0;
-  display: flex;
-}
 .jumbotron {
   background-color: #2a607c;
   padding: 0;
   margin: 0 0;
-}
-
-/* removed . as this is now a semantic tag in index */
-header h1 {
-  display: inline-block;
-  font-size: 48px;
-}
-
-/* removed . as this is now a semantic tag in index */
-/* i had to add a background color here. investigate. */
-header h1 mark {
-  color: #d9dcd6;
-  background-color: #2a607c;
-}
-
-/* removed . as this is now a semantic tag in index */
-/* changed div to nav */
-header nav {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 20px;
-  overflow: auto;
-}
-
-/* removed . as this is now a semantic tag in index */
-/* changed div to nav */
-header nav ul {
-  list-style-type: none;
-}
-
-/* removed . as this is now a semantic tag in index */
-/* changed div to nav */
-header nav ul li {
-  display: inline-block;
-  margin-left: 25px;
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-p {
-  font-size: 16px;
 }
 
 /* I thought the image should go in HTML as its content, but apparently not true for background images */
@@ -88,136 +46,6 @@ p {
 #sidebar {
   background-color: #0072bb;
 }
-.float-left {
-  float: left;
-  margin-right: 25px;
-}
-
-#fs-frm {
-  background-color: #0072bb;
-  padding: 15px;
-}
-
-#message,
-#full-name,
-#email-address {
-  width: 80%;
-}
-.float-right {
-  float: right;
-  margin-left: 25px;
-}
-
-.uppertitle {
-  text-align: center;
-}
-
-.content {
-  width: 75%;
-  display: inline-block;
-  margin-left: 20px;
-}
-.uppervideo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.upperexplanation {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: auto;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-  position: relative;
-}
-.william-rowe {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: auto;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-  position: relative;
-}
-
-.william-rowe h2 {
-  position: relative;
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.william-rowe img {
-  position: relative;
-  max-height: 200px;
-  top: -25px;
-  left: -25px;
-  margin-right: 0;
-  margin-bottom: -25px;
-}
-
-.robert-werkman {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: auto;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-  position: relative;
-}
-
-.robert-werkman h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-  position: relative;
-}
-
-.robert-werkman img {
-  position: relative;
-  max-height: 200px;
-  top: -25px;
-  left: -25px;
-  margin-right: 0;
-  margin-bottom: -25px;
-}
-
-.carrie-leese {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: auto;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-  position: relative;
-}
-
-.carrie-leese h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-  position: relative;
-}
-
-.carrie-leese img {
-  position: relative;
-  max-height: 170px;
-  max-width: 140px;
-  top: -25px;
-  left: -25px;
-  margin-right: 0;
-  margin-bottom: -25px;
-}
-
-.info {
-  margin-right: 20px;
-  padding: 20px;
-  clear: both;
-  float: right;
-  width: 20%;
-  height: 100%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #2589bd;
-}
 
 .hours {
   margin-bottom: 32px;
@@ -230,11 +58,6 @@ p {
   text-align: left;
 }
 
-.hours img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
 
 .location {
   margin-bottom: 32px;
@@ -247,11 +70,7 @@ p {
   text-align: left;
 }
 
-.location img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
+
 
 .procedures {
   margin-bottom: 32px;
@@ -264,11 +83,7 @@ p {
   text-align: left;
 }
 
-.procedures img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
+
 
 footer {
   padding: 30px;
@@ -280,57 +95,4 @@ footer {
 
 footer h2 {
   font-size: 20px;
-}
-
-.dropdown-submenu {
-  position: relative;
-  padding: 0.25rem 1.5rem;
-}
-
-.dropdown-submenu > .dropdown-menu {
-  top: 0;
-  left: 100%;
-  /* margin-top: -6px;
-  margin-left: -1px; */
-  -webkit-border-radius: 0 6px 6px 6px;
-  -moz-border-radius: 0 6px 6px;
-  border-radius: 0 6px 6px 6px;
-  color: black;
-}
-
-.dropdown-submenu:hover > .dropdown-menu {
-  display: block;
-}
-
-.dropdown-submenu > a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #ccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-
-#submenuprocedures {
-  color: black;
-}
-.dropdown-submenu:hover > a:after {
-  border-left-color: #fff;
-}
-
-.dropdown-submenu.pull-left {
-  float: none;
-}
-
-.dropdown-submenu.pull-left > .dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  -webkit-border-radius: 6px 0 6px 6px;
-  -moz-border-radius: 6px 0 6px 6px;
-  border-radius: 6px 0 6px 6px;
 }
