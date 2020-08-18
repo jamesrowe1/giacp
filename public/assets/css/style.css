@@ -15,7 +15,7 @@ img {
   width:  100px;
   height: 100px;
   object-fit: cover;
-  margin: 10px;
+  margin: 15px;
 }
 
 /* removed . as this is now a semantic tag in index */
@@ -95,4 +95,11 @@ footer {
 
 footer h2 {
   font-size: 20px;
+}
+
+.card-bio {
+  background-color: #0072bb;
+  color: #ffffff;
+  margin: 15px;
+  padding: 20px;
 }
