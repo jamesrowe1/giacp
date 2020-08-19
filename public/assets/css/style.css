@@ -35,7 +35,7 @@ header {
 
 /* I thought the image should go in HTML as its content, but apparently not true for background images */
 .hero {
-  height: 500px;
+  height: 300px;
   width: 100%;
   margin-bottom: 25px;
   background-image: url("../images/giacp-googlestreetview.JPG");
@@ -45,6 +45,14 @@ header {
 
 #sidebar {
   background-color: #0072bb;
+}
+
+a {
+  color: white
+}
+
+.linkOnPage {
+  color: darkblue
 }
 
 .hours {
