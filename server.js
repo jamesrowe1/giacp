@@ -22,19 +22,6 @@ app.set("view engine", "handlebars");
 require("./routes/html-routes.js")(app);
 // require("./routes/api-routes.js")(app);
 
-// Inside of build.js:
-const { generateSW } = require("workbox-build");
-
-const swDest = "build/sw.js";
-generateSW({
-  swDest
-  // Other configuration options...
-}).then(({ count, size }) => {
-  console.log(
-    `Generated ${swDest}, which will precache ${count} files, totaling ${size} bytes.`
-  );
-});
-
 app.listen(PORT, () => {
   console.log(
     "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
