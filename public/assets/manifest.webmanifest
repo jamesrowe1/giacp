@@ -3,12 +3,12 @@
   "name": "Gastroentorology Associates of Central Pennsylvania",
   "icons": [
     {
-      "src": "/assets/images/icon.ico",
-      "sizes": "192x192",
+      "src": "/assets/images/icon-196.png",
+      "sizes": "196x196",
       "type": "image/png"
     },
     {
-      "src": "/assets/images/icon.ico",
+      "src": "/assets/images/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
