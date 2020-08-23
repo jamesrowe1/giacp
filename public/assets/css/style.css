@@ -31,6 +31,11 @@ header {
   background-color: #2a607c;
   padding: 0;
   margin: 0 0;
+  text-align: center;
+}
+
+button {
+  margin: 10px;
 }
 
 /* I thought the image should go in HTML as its content, but apparently not true for background images */
