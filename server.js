@@ -22,6 +22,8 @@ app.set("view engine", "handlebars");
 require("./routes/html-routes.js")(app);
 // require("./routes/api-routes.js")(app);
 
+app.use(express.static(__dirname + "/"));
+
 app.listen(PORT, () => {
   console.log(
     "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",

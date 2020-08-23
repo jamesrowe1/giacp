@@ -9,3 +9,5 @@ const buildSW = () => {
     swDest: "build/sw.js"
   });
 };
+
+buildSW();
