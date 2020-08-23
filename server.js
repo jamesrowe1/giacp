@@ -39,15 +39,15 @@ const buildSW = () => {
   // This will return a Promise
   return workboxBuild.generateSW({
     globDirectory: "/",
-    globPatterns: ["**/*.{html,json,js,css}"],
+    globPatterns: ["**/*.{html,json,js,css,handlebars}"],
     swDest: "sw.js",
 
     // Define runtime caching rules.
     runtimeCaching: [
       {
         // Match any request that ends with .png, .jpg, .jpeg or .svg.
-        urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
-
+        // urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
+        urlPattern: new RegExp("/"),
         // Apply a cache-first strategy.
         handler: "CacheFirst",
 
