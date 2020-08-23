@@ -111,3 +111,9 @@ footer h2 {
   margin: 15px;
   padding: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  #sidebar {
+    display: none
+  }
+}
