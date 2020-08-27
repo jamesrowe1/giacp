@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "com.herokuapp.giacp",
+                 "sha256_cert_fingerprints": ["C9:CC:4A:F3:39:C8:2C:0C:73:D4:B5:7E:78:98:28:74:CC:93:C5:F7:7A:85:35:E6:EA:05:E1:BE:C9:23:75:D2"] }
+  }]
